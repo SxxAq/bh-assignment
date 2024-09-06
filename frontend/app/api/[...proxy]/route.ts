@@ -1,3 +1,4 @@
+// middleware.ts
 import { NextRequest, NextResponse } from 'next/server';
 import { createProxyMiddleware } from 'http-proxy-middleware';
 
@@ -9,10 +10,10 @@ const apiProxy = createProxyMiddleware({
   },
 });
 
-export async function middleware(request: NextRequest) {
+export function middleware(request: NextRequest) {
   // Apply proxy to requests matching the '/api' route
   if (request.nextUrl.pathname.startsWith('/api/')) {
-    return apiProxy(request);
+    return NextResponse.rewrite(apiProxy(request));
   }
 
   return NextResponse.next();
