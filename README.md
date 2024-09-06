@@ -1,5 +1,11 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/11978f90-fc8c-472e-ad19-afcb425c0bfd" alt="Screenshot 1" width="45%" />
+  <img src="https://github.com/user-attachments/assets/84ce4500-cf92-4ca7-ba37-1b4c9426850f" alt="Screenshot 2" width="45%" />
+</p>
+
 
 ```markdown
+
 # Web Development Coding Test: Next.js Application with Django API Integration
 
 ## Objective
