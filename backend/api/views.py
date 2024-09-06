@@ -1,7 +1,6 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
-
 class CandlestickDataView(APIView):
     def get(self, request):
         data = {
@@ -14,7 +13,6 @@ class CandlestickDataView(APIView):
             ]
         }
         return Response(data)
-
 
 class LineChartDataView(APIView):
     def get(self, request):
@@ -29,7 +27,6 @@ class LineChartDataView(APIView):
         }
         return Response(data)
 
-
 class BarChartDataView(APIView):
     def get(self, request):
         data = {
@@ -41,7 +38,6 @@ class BarChartDataView(APIView):
             ]
         }
         return Response(data)
-
 
 class PieChartDataView(APIView):
     def get(self, request):

@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-x3gu)=1bj%8ry-c55-4liua#)6hhg@dxp2cpjew6-4u$ecpfeq'
+SECRET_KEY = 'django-insecure-h35_bp=2sr_=-@1%4(wa%%obg4$ulr7wq!crhl=8pb4$%@ggw_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -53,6 +53,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'backend.urls'
+# For development only. Configure properly for production.
 CORS_ALLOW_ALL_ORIGINS = True
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
