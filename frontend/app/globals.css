@@ -1,4 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Custom font settings */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Root styles */
+:root {
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+  --background-dark: #121212; /* Dark background color */
+  --text-light: #e0e0e0; /* Light text color for dark backgrounds */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Custom styles for dark background */
+.bg-dark {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+/* Custom margin and padding for root */
+.container {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1200px;
+}
